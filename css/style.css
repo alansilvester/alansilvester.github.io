@@ -1,0 +1,50 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navegador{
+    background-color: rgb(255, 207, 118);
+    border-bottom-width: 3px;
+    border-bottom: solid;
+    border-color: darkblue;
+}
+.imgCarrusel{
+    height: 550px;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 97%;
+    color: black;
+}
+
+.textos{
+    text-align: center;
+    margin: auto;
+}
+.itemsDestinos{
+    text-align: center;
+}
+.footer{
+    border-top: 1px solid;
+}
+.footerPa{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .imgCarrusel{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 768px){
+	.imgCarrusel{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 450px){
+	.imgCarrusel{
+        height: 200px;
+    }
+}

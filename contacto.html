@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Proyecto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="img/icono.png" />
+</head>
+
+<body>
+    <header>
+        <section class="navegador">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand ml-5" href="index.html">Viajemos</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto mr-5">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Destinos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+                                    style="background-color: rgb(255, 207, 118);">
+                                    <a class="dropdown-item" href="cataratas.html">Cataratas</a>
+                                    <a class="dropdown-item" href="bariloche.html">Bariloche</a>
+                                    <a class="dropdown-item" href="grutas.html">Grutas</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+
+    <section>
+        <div class="container mt-5">
+            <form class="formulario was-validated">
+                <h1 class="text-center">Contactanos</h1>
+                <div class="form-group">
+                    <label for="apenom">Apellido y Nombre:</label>
+                    <input type="text" class="form-control" id="txtApeNombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp"
+                        placeholder="Ingrese su email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Ingrese su teléfono</label>
+                    <input type="number" class="form-control" id="txtTelefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="Textarea">Ingrese su consulta</label>
+                    <textarea class="form-control" id="Textarea" required></textarea>
+                  </div>
+                <button type="submit" class="btn btn-success float-right" id="btnEnviar">Enviar</button>
+                <button type="reset" class="btn btn-danger">Borrar todo</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="container mb-5 fixed-bottom footer">
+        <p class="float-right"></p>
+        <p class="mt-3">© 2017-2020 Company, Inc. · <strong>Viajemos</strong></p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
