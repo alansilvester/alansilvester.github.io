@@ -8,7 +8,7 @@
     border-color: darkblue;
 }
 .imgCarrusel{
-    height: 550px;
+    height: 600px;
 }
 
 hr{
@@ -16,6 +16,16 @@ hr{
     margin-bottom: 15px;
     width: 97%;
     color: black;
+}
+.btnEstilo{
+    margin: 20px 20px 20px 20px;
+    width: 100px;
+}
+.conAdivi{
+    border: 1px solid orange;
+}
+.img500{
+    border-radius: 10%;
 }
 
 .textos{

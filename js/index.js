@@ -1,39 +1,29 @@
-const formulario = document.getElementById('formulario')
-const txtApeNombre = document.getElementById('txtApeNombre')
-const txtTelefono = document.getElementById('txtTelefono')
-const txtEmail = document.getElementById('txtEmail')
-const TextArea = document.getElementById('Textarea')
-const btnEnviar = document.getElementById('btnEnviar')
+var btnCataratas = document.getElementById("btnCataratas");
+var btnBariloche = document.getElementById("btnBariloche");
+var btnGrutas = document.getElementById("btnGrutas");
+var btnBolson = document.getElementById("btnBolson");
+var btnCordoba = document.getElementById("btnCordoba");
+var btnRosario = document.getElementById("btnRosario");
+var btnUshuaia = document.getElementById("btnUshuaia");
+var btnParana = document.getElementById("btnParana");
+var btnNinguno = document.getElementById("btnNinguno");
 
-btnEnviar.addEventListener('click',enviarDatos)
+var intentos = 4;
+
+var btnAyuda1 = document.getElementById("btnAyuda1");
+var btnAyuda2 = document.getElementById("btnAyuda2");
+
+btnAyuda1.addEventListener("click", ayuda1);
+btnAyuda2.addEventListener("click", ayuda2);
 
 
-function validarTxt(){
-    if (txtApeNombre.value === '') {
-        alert('Debe ingresar su nombre y apellido')
-        return false
-    }
-    if(txtEmail.value === ''){
-        alert('Debe ingresar su Email');
-        return false
-    }
-    
-    if(isNaN(txtTelefono.value) || txtTelefono.value === ''){
-        alert('Debe ingresar N° de telefono valido (solo Numeros)')
-        return false
-    }
-    if (TextArea.value === '') {
-        alert('Debe ingresar su consulta')
-        return false
-    }   
-    return true
+
+function ayuda1() {
+  swal("Ciudad de los egresados.");
 }
 
-function enviarDatos(e){
-    e.preventDefault();
-
-    if(validarTxt()){
-        alert('Datos Cargados Correctamente')
-        alert(`Gracias Cliente :  ${txtApeNombre.value} !!`)        
-    }
+function ayuda2() {
+  swal("Se encuentra el Parque Nacional Nahuel Huapi.");
 }
+
+
