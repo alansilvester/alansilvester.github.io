@@ -97,6 +97,9 @@ padding: 0px;
     .imgCarrusel{
         height: 400px;
     }
+    .footerMedio{
+        height: 300px;
+    }	
 }
 @media screen and (max-width: 768px){
 	.imgCarrusel{
