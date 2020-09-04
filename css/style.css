@@ -42,6 +42,56 @@ hr{
     margin-top: 10px;
 }
 
+#mostrarAcercaDe{
+    display: block;
+}
+#mostrarSeguinos{
+    display: none;
+}
+
+.footerCompleto{ /*mantener footer en el fondo*/
+    position: relative;
+    margin: auto;
+    height: 100%;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:0;
+}
+.footer-top{
+background-color: black;
+border-width: 1px;
+border-style: solid;
+border-bottom-color: #feca30;
+color: white;
+}
+.tituloFooter{
+    color: white;
+}
+
+.footerMedio{
+background-color: #363232;
+margin: auto;
+height: 300px;
+width: 100%;
+}
+
+.footer-cop{
+background-color: rgb(255, 207, 118);
+width: 100%;
+color: black;
+}
+.i-navFooter{
+size: 60px;
+color: #feca30;
+margin: 20px;
+}
+.ulFooter{ 
+list-style-type:none; 
+padding: 0px;
+} 
+
+
 
 @media screen and (max-width: 1024px) {
     .imgCarrusel{

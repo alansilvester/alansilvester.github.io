@@ -33,7 +33,7 @@ function enviarDatos(){
 
     if(validarTxt()){
         alert('Datos Cargados Correctamente')
-        alert(`Gracias Señor/a :  ${txtApeNombre.value} !!`)
+        alert(`Gracias ${txtApeNombre.value} por su consulta!!`)
         formulario.reset();
     }
 }

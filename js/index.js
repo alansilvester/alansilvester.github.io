@@ -3,7 +3,6 @@ var solucion = "Bariloche";
 var idResolver = document.getElementById("idResolver");
 var cantIntento = 4;
 
-idResolver.addEventListener("click", resolver);
 
 function resolver() {
   let nombre = prompt("Ingrese su nombre");
@@ -29,4 +28,13 @@ function resolver() {
         swal("Error la respuesta es " + solucion + "!!");
     }
   }
+}
+
+function mostrarAcerca() {
+  document.getElementById('mostrarAcercaDe').style.display="block";
+  document.getElementById('mostrarSeguinos').style.display="none";
+}
+function mostrarSeguinos() {
+  document.getElementById('mostrarAcercaDe').style.display="none";
+  document.getElementById('mostrarSeguinos').style.display="block";
 }

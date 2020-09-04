@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer Proyecto</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.css">
     <link rel="icon" type="image/png" href="img/icono.png" />
 </head>
 
@@ -81,7 +82,7 @@
 
     <hr class="mt-5 mb-5">
 
-    <section>
+    <section class="mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 textos">
@@ -109,11 +110,73 @@
 
 
 
-    <footer class="container mb-5 mt-5 footer">
-        <p class="float-right"></p>
-        <p class="mt-3">© 2017-2020 Company, Inc. · <strong>Viajemos</strong></p>
-    </footer>
+    <footer class="page-footer font-small footerCompleto">
+        <div class="conteiner">
 
+            <!-- Grid row-->
+            <div class="row col-12 text-center d-flex justify-content-center pt-4 ml-0 mr-0 footer-top">
+
+                <!-- Grid column -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="tituloFooter" type="button" onclick="mostrarAcerca()"
+                            onmouseout="this.style.color='white'" onmouseover="this.style.color='#feca30'">Acerca De</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="tituloFooter" type="button" onclick="mostrarSeguinos()"
+                            onmouseout="this.style.color='white'" onmouseover="this.style.color='#feca30'">Seguinos
+                            en:</a>
+                    </h6>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <div class="row text-center text-white d-flex justify-content-center ml-0 mr-0 footerMedio">
+                <!-- Grid column -->
+                <div class="col-md-8 col-12 mt-3 mb-3" id="mostrarAcercaDe">
+                    <p>La forma en la que su empresa gestiona el presupuesto para viajes y
+                        gastos es muy importante, pero no es solo importante por el impacto en los beneficios de la
+                        empresa. Nosotros le ayudaremos a ahorrar dinero, pero también a mejorar la productividad tanto
+                        en la oficina como durante el viaje. Podemos poner a directivos y empleados en línea con la
+                        estrategia de gastos de la empresa. Además, podemos brindarle toda la información necesaria para
+                        que planifique su futuro..</p>
+                </div>
+                <div class="text-center mt-4 mb-3" id="mostrarSeguinos">
+                    <ul class="ulFooter">
+                        <li><a type="button" class="btn-floating">
+                                <i class="fab fa-facebook-square i-navFooter fa-4x" style="color:#3b5998"></i>
+                            </a>
+                            <a type="button" class="btn-floating">
+                                <a class="li-alineado" href="#!"><i
+                                        class="fab fa-instagram i-navFooter fa-4x " style="color:#DD2A7B"></i></a>
+                            </a></li>
+                        <li>
+                            <a type="button" class="btn-floating">
+                                <a class="li-alineado" href="#!"><i class="fab fa-whatsapp i-navFooter fa-4x "
+                                        style="color:#00bb2d"></i></a>
+                            </a>
+                            <a type="button" class="btn-floating">
+                                <a class="li-alineado" href="#!"><i class="far fa-envelope i-navFooter fa-4x"
+                                        style="color:#db4a39"></i></a>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3 footer-cop">© 2020 Viajemos</div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
