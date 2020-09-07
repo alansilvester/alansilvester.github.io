@@ -72,7 +72,7 @@ color: white;
 .footerMedio{
 background-color: #363232;
 margin: auto;
-height: 300px;
+height: 200px;
 width: 100%;
 }
 
@@ -98,16 +98,22 @@ padding: 0px;
         height: 400px;
     }
     .footerMedio{
-        height: 300px;
-    }	
+        height: 200px;
+    }
 }
 @media screen and (max-width: 768px){
 	.imgCarrusel{
-        height: 300px;
+        height: 270px;
+    }
+    .footerMedio{
+        height: 250px;
     }
 }
 @media screen and (max-width: 450px){
 	.imgCarrusel{
-        height: 200px;
+        height: 250px;
+    }
+    .footerMedio{
+        height: 320px;
     }
 }
